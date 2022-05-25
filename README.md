@@ -11,4 +11,52 @@ To prove the utility of computing the SHAP values in repeated nCV, in this study
 
 ## Structure of the Repository
 This repository contains 3 explanatory notebooks for experimental tests of our study.
-You can run them in Google Colab
+.
+├── classification_ICBM
+│   ├── average_plots
+│   │   ├── bar_test.png
+│   │   ├── bar_train.png
+│   │   ├── test.png
+│   │   ├── train.png
+│   │   └── XGBoost_ROCcurve.png
+│   ├── plots
+│   │   ├── summary_plot_shap_0_0.png
+│   │   ├── summary_plot_shap_0_1.png
+│   ├── roc_aucs.csv
+│   └── Shap_values
+│       ├── test0fold0.pkl
+│       ├── test0fold1.pkl
+│       ├── test0fold2.pkl
+├── classification_ICBM.ipynb
+├── data
+│   ├── ICBM_data.xlsx
+│   └── NKI2_session1_data.xlsx
+├── README.md
+├── regression_ICBM
+│   ├── average_plots
+│   │   ├── bar_test.png
+│   │   ├── bar_train.png
+│   │   ├── test.png
+│   │   └── train.png
+│   ├── plots
+│   │   ├── test_summary_bar_plot_shap_0_0.png
+│   │   ├── test_summary_bar_plot_shap_0_1.
+│   └── Shap_values
+│       ├── test0fold0.pkl
+│       ├── test0fold1.pkl
+├── regression_ICBM.ipynb
+├── regression_NKI2
+│   ├── average_plots
+│   │   ├── bar_test.png
+│   │   ├── bar_train.png
+│   │   ├── test.png
+│   │   └── train.png
+│   ├── plots
+│   │   ├── test_summary_bar_plot_shap_0_0.png
+│   │   ├── test_summary_bar_plot_shap_0_1.
+│   └── Shap_values
+│       ├── test0fold0.pkl
+│       ├── test0fold1.pkl
+├── regression_NKI2.ipynb
+├── requirements.txt
+└── utils.py
