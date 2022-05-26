@@ -20,7 +20,8 @@ Each notebook produces a directory output with the results of the experiment (e.
 -   `plots/` : which contains beeswarm and bar plots of each fold of the nested cross-validation, for both training and test sets;
 - `average plots/` : which contains beeswam and bar plots of averaged SHAP values over the folds and repetitions.
 
-The files `utils.py` contains some functions including the function `average_shap_values` which takes in input the .pkl files of SHAP values and makes an average.
+Directory `data/` contains two `.xlsx` files containing data: `NKI2_session1_data.xlsx` and `ICBM_data.xlsx`.
+The file `utils.py` contains some functions including the function `average_shap_values` which takes in input the .pkl files of SHAP values and makes an average.
 
 
 ```
@@ -77,3 +78,6 @@ The files `utils.py` contains some functions including the function `average_sha
 │   ├──------------------------------------
 
 ```
+
+## Usage
+You can run the 3 notebooks in Google Colab. To reproduce the exact results of our study, please Change the value of `num_trials` to 100 inside the notebooks.
