@@ -44,12 +44,16 @@ The file `utils.py` contains some functions including the function `average_shap
 │   │   └── XGBoost_ROCcurve.png
 │   ├── plots/
 │   │   ├── summary_plot_shap_0_0.png
-│   │   ├── summary_plot_shap_0_1.png
+│   │   ├──--------------------------
+│   │   ├──--------------------------
+│   │   └── summary_plot_shap_1_4.png
 │   ├── roc_aucs.csv
 │   └── Shap_values/
-│       ├── test0fold0.pkl
-│       ├── test0fold1.pkl
-│       ├── test0fold2.pkl
+│       ├── train0fold0.pkl
+│       ├── train0fold1.pkl
+│       ├──---------------
+│       ├──---------------
+│       └── test1fold4.pkl
 ├── regression_ICBM/
 │   ├── average_plots/
 │   │   ├── bar_test.png
@@ -64,16 +68,20 @@ The file `utils.py` contains some functions including the function `average_shap
 │   │   ├──------------------------------------
 │   │   ├──------------------------------------
 │   │   ├──------------------------------------
-│   │   ├── train_summary_bar_plot_shap_2_4.png
+│   │   └── train_summary_bar_plot_shap_2_4.png
 │   └── Shap_values/
-│       ├── test0fold0.pkl
-│       ├── test0fold1.pkl
-│       ├──------------------------------------
+│       ├── train0fold0.pkl
+│       ├── train0fold1.pkl
+│       ├──---------------
+│       ├──---------------
+│       └── test1fold4.pkl
 └──  regression_NKI2/
 │    ├── average_plots/
 │    │   ├──------------------------------------
+│    │   └──------------------------------------
 │    ├── plots/
 │    │   ├──------------------------------------
+│    │   └──------------------------------------
 │    └── Shap_values/
 │        ├──------------------------------------
 └──      └── -----------------------------------
