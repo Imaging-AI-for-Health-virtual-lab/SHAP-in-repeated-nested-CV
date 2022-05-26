@@ -20,6 +20,7 @@ def average_shap_values(dir_name,data, num_trials,num_splits):
 	- num_splits: <int>, number of splits for the nested cross-validation  
 	
 	"""
+	shaps = []
 	for name in ["train", "test"]:
 		final_shap_values = None
 		for num_trial in range(num_trials):
@@ -48,15 +49,9 @@ def average_shap_values(dir_name,data, num_trials,num_splits):
 		else:
 			df = df/num_trials
 			
-		#shap.initjs()
-		plt.figure()
-		shap.summary_plot(np.array(df).astype(float),data,show=True)
-		plt.savefig(dir_name + 'average_plots/'+name+".png", dpi = 150, bbox_inches = 'tight')
-		plt.close()
-		plt.figure()
-		shap.summary_plot(np.array(df).astype(float),data,plot_type="bar",show=True)
-		plt.savefig(dir_name + 'average_plots/bar_'+name+".png", dpi = 150, bbox_inches = 'tight')
-		plt.close()
+		shaps.append(df)
+
+	return shaps
 
 
 def mean_std(x):
