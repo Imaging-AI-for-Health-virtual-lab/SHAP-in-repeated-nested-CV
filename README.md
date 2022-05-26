@@ -80,4 +80,4 @@ The file `utils.py` contains some functions including the function `average_shap
 ```
 
 ## Usage
-You can run the 3 notebooks in Google Colab. To reproduce the exact results of our study, please Change the value of `num_trials` to 100 inside the notebooks.
+You can run the 3 notebooks in Google Colab. To reproduce the exact results of our study, please change the value of `num_trials` to 100 inside the notebooks.
