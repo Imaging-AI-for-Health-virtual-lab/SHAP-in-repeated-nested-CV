@@ -10,55 +10,70 @@ To prove the utility of computing the SHAP values in repeated nCV, in this study
 
 
 ## Structure of the Repository
-This repository contains 3 explanatory notebooks for experimental tests of our study.
+This repository contains 3 explanatory notebooks for experimental tests of our study:
+- `classification_ICBM.ipynb`
+- `regression_ICBM.ipynb`
+- `regression_NKI2.ipynb`
+
+Each notebook produces a directory output with the results of the experiment (e.g. `classification_ICBM/`). In each results' directory there are other 3 directories:
+- `Shap_values/` : which contains `.pkl` files of SHAP values for each fold of the nested cross-validation, for both training and test sets;
+-   `plots/` : which contains beeswarm and bar plots of each fold of the nested cross-validation, for both training and test sets;
+- `average plots/` : which contains beeswam and bar plots of averaged SHAP values over the folds and repetitions.
+
+The files `utils.py` contains some functions including the function `average_shap_values` which takes in input the .pkl files of SHAP values and makes an average.
+
+
 ```
 .
+├── requirements.txt
+├── utils.py
+├── classification_ICBM.ipynb
+├── regression_ICBM.ipynb
+├── regression_NKI2.ipynb
+├── README.md
+├── data/
+│   ├── ICBM_data.xlsx
+│   └── NKI2_session1_data.xlsx
 ├── classification_ICBM/
-│   ├── average_plots
+│   ├── average_plots/
 │   │   ├── bar_test.png
 │   │   ├── bar_train.png
 │   │   ├── test.png
 │   │   ├── train.png
 │   │   └── XGBoost_ROCcurve.png
-│   ├── plots
+│   ├── plots/
 │   │   ├── summary_plot_shap_0_0.png
 │   │   ├── summary_plot_shap_0_1.png
 │   ├── roc_aucs.csv
-│   └── Shap_values
+│   └── Shap_values/
 │       ├── test0fold0.pkl
 │       ├── test0fold1.pkl
 │       ├── test0fold2.pkl
-├── classification_ICBM.ipynb
-├── data
-│   ├── ICBM_data.xlsx
-│   └── NKI2_session1_data.xlsx
-├── README.md
-├── regression_ICBM
-│   ├── average_plots
+├── regression_ICBM/
+│   ├── average_plots/
 │   │   ├── bar_test.png
 │   │   ├── bar_train.png
 │   │   ├── test.png
 │   │   └── train.png
-│   ├── plots
+│   ├── plots/
 │   │   ├── test_summary_bar_plot_shap_0_0.png
-│   │   ├── test_summary_bar_plot_shap_0_1.
-│   └── Shap_values
+│   │   ├── test_summary_bar_plot_shap_0_1.png
+│   │   ├── train_summary_bar_plot_shap_0_0.png
+│   │   ├── train_summary_bar_plot_shap_0_1.png
+│   │   ├──------------------------------------
+│   │   ├──------------------------------------
+│   │   ├──------------------------------------
+│   │   ├── train_summary_bar_plot_shap_2_4.png
+│   └── Shap_values/
 │       ├── test0fold0.pkl
 │       ├── test0fold1.pkl
-├── regression_ICBM.ipynb
-├── regression_NKI2
-│   ├── average_plots
-│   │   ├── bar_test.png
-│   │   ├── bar_train.png
-│   │   ├── test.png
-│   │   └── train.png
-│   ├── plots
-│   │   ├── test_summary_bar_plot_shap_0_0.png
-│   │   ├── test_summary_bar_plot_shap_0_1.
-│   └── Shap_values
-│       ├── test0fold0.pkl
-│       ├── test0fold1.pkl
-├── regression_NKI2.ipynb
-├── requirements.txt
-└── utils.py
+│       ├──------------------------------------
+└──  regression_NKI2/
+│   ├── average_plots/
+│   ├──------------------------------------
+│   ├── plots/
+│   ├──------------------------------------
+│   └── Shap_values/
+│   ├──------------------------------------
+
 ```
