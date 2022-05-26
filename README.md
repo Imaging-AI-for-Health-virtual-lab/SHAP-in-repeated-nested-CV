@@ -11,8 +11,9 @@ To prove the utility of computing the SHAP values in repeated nCV, in this study
 
 ## Structure of the Repository
 This repository contains 3 explanatory notebooks for experimental tests of our study.
+```
 .
-├── classification_ICBM
+├── classification_ICBM/
 │   ├── average_plots
 │   │   ├── bar_test.png
 │   │   ├── bar_train.png
@@ -60,3 +61,4 @@ This repository contains 3 explanatory notebooks for experimental tests of our s
 ├── regression_NKI2.ipynb
 ├── requirements.txt
 └── utils.py
+```
