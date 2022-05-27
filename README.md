@@ -11,7 +11,7 @@ To prove the utility of computing the SHAP values in repeated nCV, in this study
 
 ## Structure of the Repository
 This repository contains 3 explanatory notebooks for experimental tests of our study:
-- `classification_ICBM.ipynb`
+- [`classification_ICBM.ipynb`](https://github.com/Imaging-AI-for-Health-virtual-lab/SHAP-in-repeated-nested-CV/blob/main/classification_ICBM.ipynb)
 - `regression_ICBM.ipynb`
 - `regression_NKI2.ipynb`
 
@@ -89,3 +89,6 @@ The file `utils.py` contains some functions including the function `average_shap
 
 ## Usage
 You can run the 3 notebooks in Google Colab. To reproduce the exact results of our study, please change the value of `num_trials` to 100 inside the notebooks, which is the number of repetitions for the nested cross-validation.
+
+## References
+1. 
