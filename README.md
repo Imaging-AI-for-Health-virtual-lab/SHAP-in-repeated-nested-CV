@@ -11,9 +11,11 @@ To prove the utility of computing the SHAP values in repeated nCV, in this study
 
 ## Structure of the Repository
 This repository contains 3 explanatory notebooks for experimental tests of our study:
+- [`regression_NKI2.ipynb`](https://github.com/Imaging-AI-for-Health-virtual-lab/SHAP-in-repeated-nested-CV/blob/main/regression_NKI2.ipynb)
+- [`regression_ICBM.ipynb`](https://github.com/Imaging-AI-for-Health-virtual-lab/SHAP-in-repeated-nested-CV/blob/main/regression_ICBM.ipynb)
 - [`classification_ICBM.ipynb`](https://github.com/Imaging-AI-for-Health-virtual-lab/SHAP-in-repeated-nested-CV/blob/main/classification_ICBM.ipynb)
-- `regression_ICBM.ipynb`
-- `regression_NKI2.ipynb`
+
+
 
 Each notebook produces a directory output with the results of the experiment (e.g. `classification_ICBM/`). In each results' directory there are other 3 directories:
 - `Shap_values/` : which contains `.pkl` files of SHAP values for each fold of the nested cross-validation, for both training and test sets;
@@ -21,7 +23,7 @@ Each notebook produces a directory output with the results of the experiment (e.
 - `average plots/` : which contains beeswam and bar plots of averaged SHAP values over the folds and repetitions.
 
 Directory `data/` contains two `.xlsx` files containing data: `NKI2_session1_data.xlsx` and `ICBM_data.xlsx`.
-The file `utils.py` contains some functions including the function `average_shap_values()` which takes in input the `.pkl` files of SHAP values and makes an average.
+The file `utils.py` contains some functions including `average_shap_values()` which takes in input the `.pkl` files of SHAP values and makes an average.
 
 
 ```
