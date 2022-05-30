@@ -2,7 +2,7 @@
 
 
 This repository contains the algorithm used in study [1].
-Briefly, we computed average SHAP values inside a repeated nested cross-validation procedure, for trainining and test sets separately.
+Briefly, we computed average SHAP values [2] inside a repeated nested cross-validation procedure, for trainining and test sets separately.
 ![](https://github.com/Imaging-AI-for-Health-virtual-lab/SHAP-in-repeated-nested-CV/blob/main/regression_ICBM/average_plots/train.png)
 ![](https://github.com/Imaging-AI-for-Health-virtual-lab/SHAP-in-repeated-nested-CV/blob/main/regression_ICBM/average_plots/test.png)
 ## Datasets
@@ -95,3 +95,4 @@ You can run the 3 notebooks in Google Colab. To reproduce the exact results of o
 
 ## References
 1. 
+2. Lundberg, Scott M., and Su-In Lee. "A unified approach to interpreting model predictions." Advances in neural information processing systems 30 (2017)
