@@ -2,7 +2,7 @@
 
 
 This repository contains the algorithm used in study [1].
-Briefly, we computed average SHAP values [2] inside a repeated nested cross-validation procedure, for trainining and test sets separately.
+Briefly, we computed average [SHAP](https://shap.readthedocs.io/en/latest/index.html) values [2] inside a repeated nested cross-validation procedure, for trainining and test sets separately.
 ![](https://github.com/Imaging-AI-for-Health-virtual-lab/SHAP-in-repeated-nested-CV/blob/main/regression_ICBM/average_plots/train.png)
 ![](https://github.com/Imaging-AI-for-Health-virtual-lab/SHAP-in-repeated-nested-CV/blob/main/regression_ICBM/average_plots/test.png)
 ## Datasets
