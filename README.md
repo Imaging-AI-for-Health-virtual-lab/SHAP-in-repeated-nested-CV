@@ -3,7 +3,8 @@
 
 This repository contains the algorithm used in study [1].
 Briefly, we computed representative [SHAP](https://shap.readthedocs.io/en/latest/index.html) values [2] inside a repeated nested cross-validation procedure, for training and test sets separately.
-
+|
+:----------------:|:--------------------:
 <figure>
   <img
   src="https://github.com/Imaging-AI-for-Health-virtual-lab/SHAP-in-repeated-nested-CV/blob/main/regression_ICBM/average_plots/train.png"
@@ -11,8 +12,7 @@ Briefly, we computed representative [SHAP](https://shap.readthedocs.io/en/latest
   width=200>
   <figcaption>Representative SHAP values - training set</figcaption>
 </figure>
-
-
+|
 <figure>
   <img
   src="https://github.com/Imaging-AI-for-Health-virtual-lab/SHAP-in-repeated-nested-CV/blob/main/regression_ICBM/average_plots/test.png"
