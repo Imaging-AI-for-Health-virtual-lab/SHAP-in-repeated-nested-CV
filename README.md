@@ -6,7 +6,7 @@ Briefly, we computed representative [SHAP](https://shap.readthedocs.io/en/latest
 
 
 | Representative SHAP values for the training set | Representative SHAP values for the test set |
-|----------------|--------------------|
+|:----------------:|:--------------------:|
 |<img src="https://github.com/Imaging-AI-for-Health-virtual-lab/SHAP-in-repeated-nested-CV/blob/main/regression_ICBM/average_plots/train.png" alt="drawing" width="400"/>| <img src="https://github.com/Imaging-AI-for-Health-virtual-lab/SHAP-in-repeated-nested-CV/blob/main/regression_ICBM/average_plots/test.png" alt="drawing" width="400"/>| 
  
 
