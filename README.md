@@ -103,4 +103,4 @@ You can run the 3 notebooks in Google Colab. To reproduce the exact results of o
 1. 
 2. Lundberg, Scott M., and Su-In Lee. "A unified approach to interpreting model predictions." Advances in neural information processing systems 30 (2017).
 3. Marzi, C.; Giannelli, M.; Tessa, C.; Mascalchi, M.; Diciotti, S. Toward a more reliable characterization of fractal properties of the
-cerebral cortex of healthy subjects during the lifespan. Scientific Reports 2020, 10, 16957. [](https://doi.org/10.1038/s41598-020-73961-w).
+cerebral cortex of healthy subjects during the lifespan. Scientific Reports 2020, 10, 16957. https://doi.org/10.1038/s41598-020-73961-w .
