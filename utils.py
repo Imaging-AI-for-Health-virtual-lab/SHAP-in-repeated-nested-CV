@@ -18,6 +18,10 @@ def average_shap_values(dir_name,data, num_trials,num_splits):
 	- data : <pandas dataframe>, data used to compute SHAP values
 	- num_trials : <int>, number of repetitions
 	- num_splits: <int>, number of splits for the nested cross-validation  
+	------------------------
+	
+	Returns:
+	- shaps: <list>, list of two pandas Dataframes containing the SHAP values for training set and test set separately.
 	
 	"""
 	shaps = []
